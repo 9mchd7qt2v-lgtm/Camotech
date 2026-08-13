@@ -11,6 +11,14 @@
     content="CAMOTECH diseña e implementa soluciones de redes, telecomunicaciones e infraestructura eléctrica para proyectos empresariales."
   />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,17 +26,17 @@
 
   <!-- HEADER -->
   <header class="header">
-    <nav class="nav">
+    <nav class="nav container">
 
       <a class="logo" href="#inicio">
-        CAMO<span>TECH</span>
+        <img src="logo.png" alt="CAMOTECH" />
       </a>
 
       <div class="nav-links">
         <a href="#servicios">Servicios</a>
         <a href="#metodologia">Metodología</a>
         <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="nav-contact">Contacto</a>
       </div>
 
     </nav>
@@ -40,33 +48,58 @@
     <!-- HERO -->
     <section id="inicio" class="hero">
 
-      <div class="hero-content">
+      <div class="hero-background"></div>
 
-        <p class="eyebrow">
-          INGENIERÍA · IMPLEMENTACIÓN · INFRAESTRUCTURA
-        </p>
+      <div class="container hero-layout">
 
-        <h1>
-          Diseñamos.<br />
-          Implementamos.<br />
-          <span>Conectamos.</span>
-        </h1>
+        <div class="hero-copy">
 
-        <p class="hero-text">
-          Ejecutamos proyectos de redes, telecomunicaciones e infraestructura
-          eléctrica, desde la ingeniería y planificación hasta la puesta en
-          marcha y soporte.
-        </p>
+          <p class="eyebrow">
+            INGENIERÍA · IMPLEMENTACIÓN · INFRAESTRUCTURA
+          </p>
 
-        <div class="hero-actions">
+          <h1>
+            Diseñamos.<br />
+            Implementamos.<br />
+            <span>Conectamos.</span>
+          </h1>
 
-          <a class="btn" href="#contacto">
-            Solicitar cotización
-          </a>
+          <p class="hero-text">
+            Ejecutamos proyectos de redes, telecomunicaciones e infraestructura
+            eléctrica, desde la ingeniería y planificación hasta la puesta en
+            marcha y soporte.
+          </p>
 
-          <a class="btn secondary" href="#servicios">
-            Conocer nuestros servicios
-          </a>
+          <div class="hero-actions">
+
+            <a class="btn btn-primary" href="#contacto">
+              Solicitar cotización
+            </a>
+
+            <a class="btn btn-secondary" href="#servicios">
+              Nuestros servicios
+            </a>
+
+          </div>
+
+          <div class="hero-tags">
+            <span>Redes empresariales</span>
+            <span>Wi-Fi</span>
+            <span>Seguridad</span>
+            <span>UPS y respaldo</span>
+          </div>
+
+        </div>
+
+
+        <div class="hero-logo">
+
+          <div class="logo-glow"></div>
+
+          <img
+            src="logo.png"
+            alt="Logo CAMOTECH"
+          />
 
         </div>
 
@@ -78,110 +111,120 @@
     <!-- SERVICIOS -->
     <section id="servicios" class="section">
 
-      <div class="section-title">
+      <div class="container">
 
-        <p class="eyebrow">
-          NUESTROS SERVICIOS
-        </p>
+        <div class="section-header">
 
-        <h2>
-          Ingeniería orientada a la implementación
-        </h2>
-
-        <p>
-          Desarrollamos proyectos tecnológicos de punta a punta,
-          integrando diseño, implementación, validación y soporte.
-        </p>
-
-      </div>
-
-
-      <div class="cards">
-
-        <!-- REDES -->
-        <article class="card">
-
-          <div class="service-number">
-            01
-          </div>
-
-          <h3>
-            Redes y Telecomunicaciones
-          </h3>
-
-          <p>
-            Diseñamos e implementamos infraestructura de comunicaciones
-            empresarial con foco en rendimiento, seguridad y escalabilidad.
+          <p class="eyebrow">
+            NUESTROS SERVICIOS
           </p>
 
-          <ul>
-            <li>Diseño e implementación de redes LAN y WAN.</li>
-            <li>Switching y routing.</li>
-            <li>Wi-Fi empresarial.</li>
-            <li>Firewalls y seguridad de red.</li>
-            <li>Segmentación mediante VLAN.</li>
-            <li>VPN y conectividad entre sedes.</li>
-            <li>Documentación HLD, LLD y As-Built.</li>
-          </ul>
-
-        </article>
-
-
-        <!-- ELECTRICIDAD -->
-        <article class="card">
-
-          <div class="service-number electrical">
-            02
-          </div>
-
-          <h3>
-            Infraestructura Eléctrica
-          </h3>
+          <h2>
+            Ingeniería orientada a la implementación
+          </h2>
 
           <p>
-            Implementamos soluciones eléctricas orientadas a
-            telecomunicaciones e infraestructura tecnológica crítica.
+            Diseñamos y ejecutamos proyectos tecnológicos de punta a punta,
+            integrando ingeniería, despliegue, validación y soporte.
           </p>
 
-          <ul>
-            <li>UPS y sistemas de respaldo energético.</li>
-            <li>Inversores y bancos de baterías.</li>
-            <li>Distribución eléctrica para salas técnicas.</li>
-            <li>Dimensionamiento de sistemas de respaldo.</li>
-            <li>Energía para infraestructura de telecomunicaciones.</li>
-            <li>Validación y puesta en marcha.</li>
-          </ul>
-
-        </article>
+        </div>
 
 
-        <!-- PROYECTOS -->
-        <article class="card">
+        <div class="service-grid">
 
-          <div class="service-number">
-            03
-          </div>
+          <!-- REDES -->
+          <article class="service-card">
 
-          <h3>
-            Ingeniería y Gestión de Proyectos
-          </h3>
+            <span class="service-number">01</span>
 
-          <p>
-            Acompañamos proyectos tecnológicos desde el levantamiento
-            inicial hasta su entrega y estabilización.
-          </p>
+            <div class="service-icon">
+              ◉
+            </div>
 
-          <ul>
-            <li>Levantamiento técnico.</li>
-            <li>Diseño de arquitectura.</li>
-            <li>Planificación de implementación.</li>
-            <li>Coordinación técnica.</li>
-            <li>Validaciones funcionales.</li>
-            <li>Troubleshooting.</li>
-            <li>Acompañamiento post implementación.</li>
-          </ul>
+            <h3>
+              Redes y Telecomunicaciones
+            </h3>
 
-        </article>
+            <p>
+              Infraestructura de comunicaciones empresarial orientada a
+              rendimiento, seguridad y escalabilidad.
+            </p>
+
+            <ul>
+              <li>Diseño e implementación LAN / WAN.</li>
+              <li>Switching y routing.</li>
+              <li>Wi-Fi empresarial.</li>
+              <li>Firewalls y seguridad de red.</li>
+              <li>VPN y conectividad entre sedes.</li>
+              <li>Segmentación mediante VLAN.</li>
+              <li>Documentación HLD, LLD y As-Built.</li>
+            </ul>
+
+          </article>
+
+
+          <!-- ELÉCTRICA -->
+          <article class="service-card electrical-card">
+
+            <span class="service-number electrical-number">02</span>
+
+            <div class="service-icon electrical-icon">
+              ⚡
+            </div>
+
+            <h3>
+              Infraestructura Eléctrica
+            </h3>
+
+            <p>
+              Soluciones eléctricas asociadas a telecomunicaciones e
+              infraestructura tecnológica crítica.
+            </p>
+
+            <ul>
+              <li>UPS y respaldo energético.</li>
+              <li>Inversores y bancos de baterías.</li>
+              <li>Distribución eléctrica para salas técnicas.</li>
+              <li>Dimensionamiento de respaldo.</li>
+              <li>Energía para infraestructura TI.</li>
+              <li>Validación y puesta en marcha.</li>
+            </ul>
+
+          </article>
+
+
+          <!-- PROYECTOS -->
+          <article class="service-card">
+
+            <span class="service-number">03</span>
+
+            <div class="service-icon">
+              ◇
+            </div>
+
+            <h3>
+              Ingeniería y Gestión de Proyectos
+            </h3>
+
+            <p>
+              Acompañamos proyectos tecnológicos desde el levantamiento hasta
+              la estabilización de la solución.
+            </p>
+
+            <ul>
+              <li>Levantamiento técnico.</li>
+              <li>Diseño de arquitectura.</li>
+              <li>Planificación de implementación.</li>
+              <li>Coordinación técnica.</li>
+              <li>Validaciones funcionales.</li>
+              <li>Troubleshooting.</li>
+              <li>Acompañamiento post implementación.</li>
+            </ul>
+
+          </article>
+
+        </div>
 
       </div>
 
@@ -191,29 +234,33 @@
     <!-- METODOLOGÍA -->
     <section id="metodologia" class="method">
 
-      <div class="method-content">
+      <div class="container">
 
-        <p class="eyebrow">
-          NUESTRA METODOLOGÍA
-        </p>
+        <div class="section-header method-heading">
 
-        <h2>
-          Del requerimiento a la operación
-        </h2>
+          <p class="eyebrow">
+            NUESTRA METODOLOGÍA
+          </p>
 
-        <p>
-          Aplicamos una metodología estructurada que permite mantener
-          trazabilidad, control técnico y calidad durante todo el proyecto.
-        </p>
+          <h2>
+            Del requerimiento a la operación
+          </h2>
+
+          <p>
+            Aplicamos una metodología estructurada que permite mantener
+            trazabilidad, control técnico y calidad durante todo el proyecto.
+          </p>
+
+        </div>
 
 
-        <div class="method-steps">
+        <div class="method-grid">
 
           <div class="method-step">
             <span>01</span>
             <h3>Levantamiento</h3>
             <p>
-              Entendemos los requerimientos técnicos y operacionales.
+              Identificamos requerimientos técnicos, operacionales y de negocio.
             </p>
           </div>
 
@@ -221,7 +268,7 @@
             <span>02</span>
             <h3>Diseño</h3>
             <p>
-              Definimos arquitectura, direccionamiento y configuraciones.
+              Definimos arquitectura, direccionamiento y parámetros técnicos.
             </p>
           </div>
 
@@ -229,7 +276,7 @@
             <span>03</span>
             <h3>Implementación</h3>
             <p>
-              Desplegamos y configuramos la solución.
+              Desplegamos y configuramos la solución definida.
             </p>
           </div>
 
@@ -237,7 +284,7 @@
             <span>04</span>
             <h3>Validación</h3>
             <p>
-              Ejecutamos pruebas y ajustes antes de la entrega.
+              Ejecutamos pruebas funcionales, ajustes y puesta en marcha.
             </p>
           </div>
 
@@ -245,7 +292,7 @@
             <span>05</span>
             <h3>Soporte</h3>
             <p>
-              Acompañamos la estabilización de la solución.
+              Acompañamos la estabilización de la solución implementada.
             </p>
           </div>
 
@@ -259,32 +306,36 @@
     <!-- NOSOTROS -->
     <section id="nosotros" class="section about">
 
-      <div class="section-title">
+      <div class="container about-layout">
 
-        <p class="eyebrow">
-          CAMOTECH
-        </p>
+        <div>
 
-        <h2>
-          Ingeniería aplicada a proyectos reales
-        </h2>
+          <p class="eyebrow">
+            CAMOTECH
+          </p>
 
-      </div>
+          <h2>
+            Ingeniería aplicada a proyectos reales
+          </h2>
+
+        </div>
 
 
-      <div class="about-content">
+        <div class="about-text">
 
-        <p>
-          CAMOTECH nace con el objetivo de entregar servicios de ingeniería
-          e implementación para proyectos de telecomunicaciones,
-          infraestructura tecnológica y sistemas eléctricos asociados.
-        </p>
+          <p>
+            CAMOTECH desarrolla proyectos de ingeniería e implementación para
+            redes, telecomunicaciones e infraestructura eléctrica asociada a
+            sistemas tecnológicos.
+          </p>
 
-        <p>
-          Nuestro enfoque combina experiencia técnica, planificación,
-          implementación y documentación para entregar soluciones
-          confiables, escalables y preparadas para su operación.
-        </p>
+          <p>
+            Nuestro enfoque combina experiencia técnica, planificación,
+            implementación y documentación para entregar soluciones confiables,
+            escalables y preparadas para su operación.
+          </p>
+
+        </div>
 
       </div>
 
@@ -294,47 +345,110 @@
     <!-- POR QUÉ CAMOTECH -->
     <section class="section why">
 
-      <div class="section-title">
+      <div class="container">
 
-        <p class="eyebrow">
-          ¿POR QUÉ CAMOTECH?
-        </p>
+        <div class="section-header">
 
-        <h2>
-          Ingeniería, ejecución y acompañamiento
-        </h2>
+          <p class="eyebrow">
+            ¿POR QUÉ CAMOTECH?
+          </p>
+
+          <h2>
+            Ingeniería, ejecución y acompañamiento
+          </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+          <article class="why-card">
+
+            <span>01</span>
+
+            <h3>
+              Ingeniería aplicada
+            </h3>
+
+            <p>
+              Diseñamos soluciones pensando desde el inicio en su implementación,
+              operación y crecimiento.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>02</span>
+
+            <h3>
+              Implementación end-to-end
+            </h3>
+
+            <p>
+              Acompañamos el proyecto desde el diseño hasta su puesta en marcha.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>03</span>
+
+            <h3>
+              Infraestructura crítica
+            </h3>
+
+            <p>
+              Trabajamos con foco en disponibilidad, seguridad y continuidad
+              operacional.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>04</span>
+
+            <h3>
+              Documentación y soporte
+            </h3>
+
+            <p>
+              Entregamos documentación técnica y acompañamiento posterior a la
+              implementación.
+            </p>
+
+          </article>
+
+        </div>
 
       </div>
 
+    </section>
 
-      <div class="why-grid">
 
-        <div class="why-item">
-          <h3>Ingeniería aplicada</h3>
-          <p>
-            Diseñamos soluciones pensando en su implementación y operación real.
-          </p>
-        </div>
+    <!-- INDUSTRIAS -->
+    <section class="industries">
 
-        <div class="why-item">
-          <h3>Implementación end-to-end</h3>
-          <p>
-            Acompañamos el proyecto desde el diseño hasta la puesta en marcha.
-          </p>
-        </div>
+      <div class="container">
 
-        <div class="why-item">
-          <h3>Infraestructura crítica</h3>
-          <p>
-            Diseñamos soluciones orientadas a disponibilidad y continuidad operacional.
-          </p>
-        </div>
+        <p class="eyebrow">
+          SOLUCIONES PARA
+        </p>
 
-        <div class="why-item">
-          <h3>Documentación y soporte</h3>
-          <p>
-            Entregamos documentación técnica y acompañamiento post implementación.
-          </p>
+        <div class="industry-list">
+
+          <span>Empresas</span>
+          <span>Industria</span>
+          <span>Minería</span>
+          <span>Retail</span>
+          <span>Salud</span>
+          <span>Educación</span>
+
         </div>
 
       </div>
@@ -345,35 +459,43 @@
     <!-- CONTACTO -->
     <section id="contacto" class="contact">
 
-      <p class="eyebrow">
-        HABLEMOS DE TU PROYECTO
-      </p>
+      <div class="container contact-box">
 
-      <h2>
-        ¿Necesitas diseñar o implementar una solución?
-      </h2>
+        <div>
 
-      <p>
-        Cuéntanos los requerimientos de tu proyecto y coordinemos
-        una evaluación técnica.
-      </p>
+          <p class="eyebrow">
+            HABLEMOS DE TU PROYECTO
+          </p>
+
+          <h2>
+            ¿Necesitas diseñar o implementar una solución?
+          </h2>
+
+          <p>
+            Cuéntanos los requerimientos de tu proyecto y coordinemos una
+            evaluación técnica.
+          </p>
+
+        </div>
 
 
-      <div class="contact-actions">
+        <div class="contact-actions">
 
-        <a
-          class="btn"
-          href="mailto:dgarciab@camotech.cl?subject=Solicitud%20de%20cotización%20CAMOTECH"
-        >
-          Solicitar cotización
-        </a>
+          <a
+            class="btn btn-primary"
+            href="mailto:dgarciab@camotech.cl?subject=Solicitud%20de%20cotización%20CAMOTECH"
+          >
+            Solicitar cotización
+          </a>
 
-        <a
-          class="btn secondary"
-          href="mailto:dgarciab@camotech.cl"
-        >
-          dgarciab@camotech.cl
-        </a>
+          <a
+            class="btn btn-secondary"
+            href="mailto:dgarciab@camotech.cl"
+          >
+            dgarciab@camotech.cl
+          </a>
+
+        </div>
 
       </div>
 
@@ -385,23 +507,37 @@
   <!-- FOOTER -->
   <footer>
 
-    <div class="footer-content">
+    <div class="container footer-content">
 
       <div class="footer-brand">
-        CAMO<span>TECH</span>
+
+        <img
+          src="logo.png"
+          alt="CAMOTECH"
+        />
+
+        <p>
+          Diseñamos. Implementamos. Conectamos.
+        </p>
+
       </div>
 
-      <p>
-        Diseñamos. Implementamos. Conectamos.
-      </p>
 
-      <p class="footer-location">
-        Providencia · Santiago · Chile
-      </p>
+      <div class="footer-info">
 
-      <small>
-        © 2026 CAMOTECH SpA. Todos los derechos reservados.
-      </small>
+        <p>
+          Providencia · Santiago · Chile
+        </p>
+
+        <p>
+          dgarciab@camotech.cl
+        </p>
+
+        <small>
+          © 2026 CAMOTECH SpA. Todos los derechos reservados.
+        </small>
+
+      </div>
 
     </div>
 
