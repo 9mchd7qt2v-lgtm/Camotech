@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Quiénes Somos | CAMOTECH Ingeniería y Tecnología</title>
+
+  <meta
+    name="description"
+    content="Conoce CAMOTECH, empresa chilena especializada en ingeniería de redes, telecomunicaciones, infraestructura tecnológica y proyectos eléctricos para empresas."
+  />
+
+  <link rel="canonical" href="https://camotech.cl/quienes-somos.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://camotech.cl/quienes-somos.html" />
+  <meta property="og:title" content="Quiénes Somos | CAMOTECH Ingeniería y Tecnología" />
+  <meta property="og:description" content="Conoce CAMOTECH, empresa chilena especializada en ingeniería de redes, telecomunicaciones, infraestructura tecnológica y proyectos eléctricos para empresas." />
+  <meta property="og:image" content="https://camotech.cl/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Quiénes Somos | CAMOTECH Ingeniería y Tecnología" />
+  <meta name="twitter:description" content="Conoce CAMOTECH, empresa chilena especializada en ingeniería de redes, telecomunicaciones, infraestructura tecnológica y proyectos eléctricos para empresas." />
+  <meta name="twitter:image" content="https://camotech.cl/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHPN498LLK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BHPN498LLK');
+  </script>
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CAMOTECH SpA",
+    "url": "https://camotech.cl/",
+    "logo": "https://camotech.cl/logo.png",
+    "email": "contacto@camotech.cl",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Providencia",
+      "addressRegion": "Región Metropolitana",
+      "addressCountry": "CL"
+    },
+    "description": "Empresa chilena de ingeniería de redes, telecomunicaciones, infraestructura tecnológica y proyectos eléctricos para empresas."
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .page-hero{
+      padding:110px 0 80px;
+      background:
+        radial-gradient(circle at 78% 30%,rgba(24,182,246,.12),transparent 30%),
+        linear-gradient(180deg,#081420 0%,#07111c 100%);
+      border-bottom:1px solid var(--line);
+    }
+
+    .page-hero-content{
+      max-width:860px;
+    }
+
+    .page-hero h1{
+      margin:18px 0 24px;
+      font-size:clamp(42px,5vw,68px);
+      line-height:1.05;
+      letter-spacing:-.04em;
+    }
+
+    .page-hero h1 span{
+      color:var(--cyan);
+    }
+
+    .page-hero-text{
+      max-width:760px;
+      margin:0;
+      color:var(--muted);
+      font-size:17px;
+    }
+
+    .content-section{
+      padding:95px 0;
+    }
+
+    .content-section.alt{
+      background:var(--bg2);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .content-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:70px;
+      align-items:start;
+    }
+
+    .content-copy h2{
+      margin:14px 0 20px;
+      font-size:clamp(32px,4vw,48px);
+      line-height:1.1;
+      letter-spacing:-.03em;
+    }
+
+    .content-copy p{
+      color:var(--muted);
+      margin:0 0 18px;
+    }
+
+    .principles-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      margin-top:42px;
+    }
+
+    .principle-card{
+      padding:28px;
+      border:1px solid var(--line);
+      border-radius:15px;
+      background:rgba(255,255,255,.018);
+    }
+
+    .principle-card h3{
+      margin:0 0 12px;
+      font-size:17px;
+    }
+
+    .principle-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .capabilities-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+      margin-top:35px;
+    }
+
+    .capability{
+      padding:24px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.012));
+    }
+
+    .capability h3{
+      margin:0 0 10px;
+      font-size:18px;
+    }
+
+    .capability p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .inline-link{
+      color:var(--cyan);
+      font-weight:600;
+    }
+
+    .about-cta{
+      padding:80px 0 105px;
+    }
+
+    .about-cta-box{
+      padding:48px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:40px;
+      border:1px solid rgba(24,182,246,.20);
+      border-radius:20px;
+      background:
+        linear-gradient(135deg,rgba(24,182,246,.10),rgba(255,255,255,.015)),
+        var(--panel);
+    }
+
+    .about-cta-box h2{
+      margin:14px 0 16px;
+      font-size:clamp(32px,4vw,48px);
+      line-height:1.1;
+      letter-spacing:-.03em;
+    }
+
+    .about-cta-box p{
+      margin:0;
+      color:var(--muted);
+      max-width:720px;
+    }
+
+    @media(max-width:980px){
+      .content-grid{grid-template-columns:1fr;gap:28px}
+      .principles-grid{grid-template-columns:1fr 1fr}
+      .about-cta-box{flex-direction:column;align-items:flex-start}
+    }
+
+    @media(max-width:700px){
+      .page-hero{padding:90px 0 65px}
+      .page-hero h1{font-size:42px}
+      .content-section{padding:76px 0}
+      .principles-grid,.capabilities-grid{grid-template-columns:1fr}
+      .about-cta-box{padding:32px 24px}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav container">
+
+      <a class="logo" href="index.html#inicio">
+        <img src="logo.png" alt="CAMOTECH" />
+      </a>
+
+      <div class="nav-links">
+
+        <a href="index.html#servicios">Soluciones</a>
+        <a href="index.html#metodologia">Metodología</a>
+
+        <div class="nav-dropdown">
+
+          <button class="nav-dropdown-toggle" type="button">
+            Conócenos
+            <span class="dropdown-arrow">⌄</span>
+          </button>
+
+          <div class="nav-dropdown-menu">
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="codigo-etico.html">Código Ético</a>
+            <a href="marcas.html">Marcas y tecnologías</a>
+            <a href="politicas.html">Políticas</a>
+          </div>
+
+        </div>
+
+        <a href="index.html#contacto" class="nav-contact">Contacto</a>
+
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+
+        <p class="eyebrow">QUIÉNES SOMOS</p>
+
+        <h1>
+          Ingeniería y tecnología para
+          <span>proyectos empresariales</span>
+        </h1>
+
+        <p class="page-hero-text">
+          CAMOTECH desarrolla soluciones de ingeniería para redes,
+          telecomunicaciones, infraestructura tecnológica y proyectos eléctricos,
+          acompañando a empresas desde el levantamiento y diseño hasta la
+          implementación, validación y puesta en operación.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- PRESENTACIÓN -->
+    <section class="content-section">
+
+      <div class="container content-grid">
+
+        <div>
+          <p class="eyebrow">CAMOTECH</p>
+          <h2>Ingeniería aplicada a necesidades reales</h2>
+        </div>
+
+        <div class="content-copy">
+          <p>
+            Somos una empresa chilena orientada al desarrollo e implementación de
+            proyectos tecnológicos para organizaciones que necesitan infraestructura
+            confiable, segura y preparada para crecer.
+          </p>
+
+          <p>
+            Nuestro trabajo combina ingeniería, planificación, implementación,
+            documentación y soporte técnico, con un enfoque práctico que busca
+            transformar requerimientos de negocio en soluciones técnicamente
+            viables y operables.
+          </p>
+
+          <p>
+            Participamos en proyectos de redes empresariales, conectividad,
+            telecomunicaciones, infraestructura tecnológica, seguridad,
+            continuidad operacional y sistemas eléctricos asociados a plataformas
+            tecnológicas.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ENFOQUE -->
+    <section class="content-section alt">
+
+      <div class="container">
+
+        <div class="section-header">
+          <p class="eyebrow">NUESTRO ENFOQUE</p>
+          <h2>Del diseño a la operación</h2>
+          <p>
+            Abordamos cada proyecto con una metodología estructurada, buscando
+            mantener trazabilidad técnica, control de implementación y claridad
+            durante todo el ciclo de trabajo.
+          </p>
+        </div>
+
+        <div class="capabilities-grid">
+
+          <article class="capability">
+            <h3>Levantamiento y diseño</h3>
+            <p>
+              Analizamos requerimientos técnicos y operacionales para definir una
+              solución alineada con las necesidades reales del proyecto.
+            </p>
+          </article>
+
+          <article class="capability">
+            <h3>Implementación</h3>
+            <p>
+              Ejecutamos la solución de forma planificada, coordinando actividades,
+              integraciones y validaciones técnicas.
+            </p>
+          </article>
+
+          <article class="capability">
+            <h3>Validación y documentación</h3>
+            <p>
+              Verificamos el funcionamiento de la infraestructura y documentamos
+              configuraciones, componentes y entregables relevantes.
+            </p>
+          </article>
+
+          <article class="capability">
+            <h3>Operación y soporte</h3>
+            <p>
+              Acompañamos la puesta en servicio y las etapas posteriores a la
+              implementación para facilitar una operación estable.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- QUÉ HACEMOS -->
+    <section class="content-section">
+
+      <div class="container">
+
+        <div class="section-header">
+          <p class="eyebrow">QUÉ HACEMOS</p>
+          <h2>Infraestructura tecnológica para empresas</h2>
+          <p>
+            Integramos distintas disciplinas técnicas para desarrollar proyectos
+            completos y coherentes con la operación de cada organización.
+          </p>
+        </div>
+
+        <div class="capabilities-grid">
+
+          <article class="capability">
+            <h3>Redes y telecomunicaciones</h3>
+            <p>
+              Diseño e implementación de redes empresariales, conectividad
+              cableada e inalámbrica, integración entre sedes y optimización de
+              infraestructura de comunicaciones.
+            </p>
+          </article>
+
+          <article class="capability">
+            <h3>Seguridad e infraestructura tecnológica</h3>
+            <p>
+              Soluciones orientadas a proteger y dar continuidad a la
+              infraestructura tecnológica, integrando componentes de seguridad,
+              disponibilidad y conectividad.
+            </p>
+          </article>
+
+          <article class="capability">
+            <h3>Proyectos eléctricos</h3>
+            <p>
+              Infraestructura eléctrica asociada a sistemas tecnológicos,
+              incluyendo respaldo energético, UPS, salas técnicas y continuidad
+              operacional.
+            </p>
+          </article>
+
+          <article class="capability">
+            <h3>Ingeniería y gestión de proyectos</h3>
+            <p>
+              Levantamiento, planificación, coordinación, supervisión técnica,
+              control de calidad y acompañamiento durante la implementación.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRINCIPIOS -->
+    <section class="content-section alt">
+
+      <div class="container">
+
+        <div class="section-header">
+          <p class="eyebrow">NUESTROS PRINCIPIOS</p>
+          <h2>Cómo trabajamos</h2>
+          <p>
+            Buscamos construir relaciones de largo plazo mediante un trabajo
+            técnico responsable, transparente y orientado a resultados.
+          </p>
+        </div>
+
+        <div class="principles-grid">
+
+          <article class="principle-card">
+            <h3>Calidad técnica</h3>
+            <p>
+              Diseñamos e implementamos soluciones considerando buenas prácticas,
+              operación y crecimiento futuro.
+            </p>
+          </article>
+
+          <article class="principle-card">
+            <h3>Transparencia</h3>
+            <p>
+              Comunicamos alcances, riesgos, restricciones y decisiones técnicas
+              de forma clara durante el proyecto.
+            </p>
+          </article>
+
+          <article class="principle-card">
+            <h3>Continuidad operacional</h3>
+            <p>
+              Priorizamos soluciones que aporten estabilidad, disponibilidad y
+              confiabilidad a la infraestructura.
+            </p>
+          </article>
+
+          <article class="principle-card">
+            <h3>Compromiso</h3>
+            <p>
+              Acompañamos a nuestros clientes con planificación, documentación y
+              respaldo técnico en cada etapa.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TECNOLOGÍAS -->
+    <section class="content-section">
+
+      <div class="container content-grid">
+
+        <div>
+          <p class="eyebrow">TECNOLOGÍAS</p>
+          <h2>Soluciones basadas en tecnologías empresariales</h2>
+        </div>
+
+        <div class="content-copy">
+          <p>
+            Trabajamos con tecnologías utilizadas en infraestructura empresarial,
+            seleccionando soluciones de acuerdo con los requerimientos técnicos,
+            operacionales y de continuidad de cada proyecto.
+          </p>
+
+          <p>
+            Puedes conocer las principales marcas y tecnologías con las que
+            desarrollamos nuestros proyectos en nuestra sección de
+            <a class="inline-link" href="marcas.html">Marcas y tecnologías</a>.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="about-cta">
+
+      <div class="container about-cta-box">
+
+        <div>
+          <p class="eyebrow">HABLEMOS DE TU PROYECTO</p>
+
+          <h2>¿Necesitas diseñar o implementar una solución?</h2>
+
+          <p>
+            Cuéntanos los requerimientos de tu proyecto y coordinemos una
+            evaluación técnica.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+
+          <a
+            class="btn btn-primary"
+            href="mailto:contacto@camotech.cl?subject=Solicitud%20de%20cotización%20CAMOTECH"
+          >
+            Solicitar cotización
+          </a>
+
+          <a
+            class="btn btn-whatsapp"
+            href="https://wa.me/56978053548?text=Hola%2C%20quiero%20consultar%20por%20los%20servicios%20de%20CAMOTECH"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-content">
+
+      <div class="footer-brand">
+
+        <img src="logo.png" alt="CAMOTECH" />
+
+        <p>
+          Diseñamos. Implementamos. Conectamos.
+        </p>
+
+      </div>
+
+      <div class="footer-info">
+
+        <p>
+          Providencia · Santiago · Chile
+        </p>
+
+        <p>
+          contacto@camotech.cl
+        </p>
+
+        <small>
+          © 2026 CAMOTECH SpA. Todos los derechos reservados.
+        </small>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
