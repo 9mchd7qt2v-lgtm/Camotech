@@ -4,9 +4,27 @@
 
   <url>
     <loc>https://camotech.cl/</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://camotech.cl/quienes-somos.html</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://camotech.cl/redes-datos-ciberseguridad.html</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://camotech.cl/proyectos-electricos.html</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://camotech.cl/ingenieria-gestion-proyectos.html</loc>
+    <lastmod>2026-08-26</lastmod>
   </url>
 
 </urlset>
